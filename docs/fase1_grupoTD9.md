@@ -4,7 +4,7 @@
 | :--- | :--- |
 | **Nome provisório** | UniEvents |
 | **Tema** | Agenda Social Colaborativa Académica |
-| **Membros do grupo** | Pedro Almeida Carvalho, Nº 29268; Gonçalo Marques, Nº29198|
+| **Membros do grupo** | Pedro Carvalho, Nº 29268; Gonçalo Marques, Nº29198|
 | **Curso / Turma** | Engenharia Informática / Turma A,D |
 | **Data e versão** | 19/11/2025 - v1.0 |
 
