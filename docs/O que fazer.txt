@@ -1,0 +1,15 @@
+
+
+4 - Prazos e Entrega:
+	- Local (Moodle e repositório git - pasta "/docs/")
+
+
+
+
+
+backend node.js
+
+tem que ter websockets
+
+bd - mongo.db
+
