@@ -59,11 +59,14 @@ const EventFeed = () => {
                 setEvents(eventsRes.data);
 
                 // Fetch saved RSVPs to mark them
+                const token = localStorage.getItem("token");
+                if (token) {
                 try {
                     const rsvpRes = await api.get("/rsvps/me");
                     setSavedIds(rsvpRes.data.map((r) => r.eventId));
                 } catch (e) {
                     console.warn("Could not fetch RSVPs", e);
+                }
                 }
 
             } catch (err) {
