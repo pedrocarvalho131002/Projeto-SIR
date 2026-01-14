@@ -318,7 +318,7 @@ const EventFeed = () => {
                         )}
                     </div>
                     <div
-                        onClick={() => window.location.href = '/profile'}
+                        onClick={() => navigate('/profile')}
                         style={{
                             width: '40px',
                             height: '40px',
