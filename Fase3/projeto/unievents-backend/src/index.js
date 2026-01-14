@@ -15,12 +15,14 @@ const server = http.createServer(app);
 
 // SOCKET
 const { Server } = require("socket.io");
-const allowedOrigins = ["http://localhost:5173", "http://192.168.8.101:5173"];
+const allowedOrigins = (process.env.CORS_ORIGIN || "http://localhost:5173")
+  .split(",")
+  .map(s => s.trim());
 
 const io = new Server(server, {
   cors: {
     origin: allowedOrigins,
-    methods: ["GET", "POST"],
+    methods: ["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"],
     credentials: true
   },
 });
@@ -33,6 +35,7 @@ app.use(cors({
   origin: allowedOrigins,
   credentials: true
 }));
+
 app.use(express.json());
 
 app.use("/uploads", express.static(path.join(__dirname, "uploads")));
