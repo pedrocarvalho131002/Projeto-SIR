@@ -75,7 +75,6 @@ const EventFeed = () => {
         }
 
         loadData();
-        loadData();
     }, [statusFilter]);
 
     // Socket & Notifications
